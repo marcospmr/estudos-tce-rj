@@ -1,0 +1,33 @@
+# Tarefas: App de Estudos TCE-RJ
+
+- [x] 1. Base do projeto
+  - [x] 1.1 Estrutura `app/` com `index.html`, `manifest.webmanifest`, CSS mobile-first e ícones PNG (192, 512, 180)
+  - [x] 1.2 `db.js`: IndexedDB com stores `questoes`, `tentativas`, `revisao`, `sessoes`, `simulados`, `config`, e pedido de `storage.persist()` (Req. 7.4)
+  - [x] 1.3 Roteamento por hash e navegação inferior (Req. 7.1)
+- [x] 2. Currículo e banco inicial
+  - [x] 2.1 `curriculum.js`: disciplinas, tópicos, trilhas B/T1/T2 e minutos calibrados para terminar no mês 8 (B13)
+  - [x] 2.2 Questões autorais do mês 1 com comentário e referência (Req. 6.1, 6.2)
+- [x] 3. Domínio (sem DOM)
+  - [x] 3.1 `dates.js`: datas locais AAAA-MM-DD
+  - [x] 3.2 `scheduler.js`: geração por fase, simulados, recálculo só do futuro, tópicos que não couberam (Req. 1, 8; B5.1, B5.2, B13)
+  - [x] 3.3 `review.js`: caixas 1/7/30 dias (Req. 3; B5.3)
+  - [x] 3.4 `scoring.js`: nota de múltipla escolha e de certo/errado, bruta e líquida (Req. 4.4)
+  - [x] 3.5 `stats.js`: % por disciplina e tópico, metas por fase, horas e questões por dia (Req. 5)
+  - [x] 3.6 `importer.js`: JSON e CSV com relatório de erros por linha (Req. 6.3, 6.4)
+- [x] 4. Telas
+  - [x] 4.1 Hoje (Req. 1.3 a 1.5, 3.5, 5.2, 7.6)
+  - [x] 4.2 Questões com filtros e correção imediata, anotação e tipo de erro (Req. 2, 3.6, 3.7)
+  - [x] 4.3 Revisão e caderno de erros (Req. 3)
+  - [x] 4.4 Simulados com cronômetro, retomada após recarregar e resultado por disciplina (Req. 4)
+  - [x] 4.5 Cronograma semanal com troca de dias (Req. 1.1, 1.2, 1.6)
+  - [x] 4.6 Desempenho com gráficos SVG (Req. 5)
+  - [x] 4.7 Ajustes: banca, data da prova, tópicos ativos, importação, cadastro e edição de questões, backup (Req. 6.3 a 6.5, 7.5, 8)
+- [x] 5. Offline e backup
+  - [x] 5.1 `sw.js` com cache versionado e aviso de nova versão (Req. 7.2, 7.3)
+  - [x] 5.2 Exportar e compartilhar backup; importar com backup automático prévio (Req. 7.5; B7)
+- [x] 6. Verificação
+  - [x] 6.1 Testes `node --test` para as propriedades 1 a 5, 8 e 9 (B9)
+  - [x] 6.2 Teste no navegador em tela de celular: questões, simulado, backup (21 verificações em `tests/e2e/fluxo.js`)
+  - [ ] 6.3 Modo offline e instalação: verificar no celular após publicar (o ambiente de teste não permite exercitar o service worker)
+- [x] 7. Entrega
+  - [x] 7.1 Gerar `estudos-tce-rj.zip` com a pasta `app/` e guia de publicação no Netlify Drop e instalação no celular

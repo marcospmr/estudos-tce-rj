@@ -1,0 +1,13 @@
+{
+  "name": "estudos-tce-rj",
+  "private": true,
+  "type": "module",
+  "description": "App de estudos para o TCE-RJ (Auditor de Controle Externo, TI). Sem dependências.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "typecheck": "tsc -p jsconfig.json",
+    "icons": "python3 scripts/gerar_icones.py",
+    "zip": "bash scripts/empacotar.sh",
+    "serve": "python3 -m http.server 8080 --directory app"
+  }
+}

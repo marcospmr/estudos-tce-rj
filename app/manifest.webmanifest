@@ -1,0 +1,17 @@
+{
+  "name": "Estudos TCE-RJ",
+  "short_name": "TCE-RJ",
+  "description": "Plano de estudos, questões com correção, revisão espaçada e simulados para o TCE-RJ (TI).",
+  "lang": "pt-BR",
+  "start_url": "./index.html#/hoje",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f5f9",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
