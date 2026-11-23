@@ -161,3 +161,20 @@ test('banco inicial: questões válidas, com referência, cobrindo todos os tóp
   }
   assert.ok(QUESTOES_SEED.length >= 150);
 });
+
+test('material: todos os tópicos do mês 1 têm resumo, atenção e fontes válidas', async () => {
+  const { MATERIAL } = await import('../app/js/data/material.js');
+  const ids = new Set(TOPICOS.map((t) => t.id));
+  for (const id of Object.keys(MATERIAL)) assert.ok(ids.has(id), 'tópico inexistente: ' + id);
+  for (const t of TOPICOS.filter((x) => x.mes === 1)) {
+    const m = MATERIAL[t.id];
+    assert.ok(m, 'sem material: ' + t.id);
+    assert.ok(m.resumo.length >= 4, 'resumo curto: ' + t.id);
+    assert.ok(m.atencao.length >= 1, 'sem atenção: ' + t.id);
+    assert.ok(m.fontes.length >= 1, 'sem fontes: ' + t.id);
+    for (const [nome, url] of m.fontes) {
+      assert.ok(nome.trim(), 'fonte sem nome: ' + t.id);
+      if (url) assert.match(url, /^https?:\/\/[^\s]+$/, 'url inválida em ' + t.id);
+    }
+  }
+});

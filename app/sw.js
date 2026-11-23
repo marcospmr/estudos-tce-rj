@@ -1,5 +1,5 @@
 // Gerado por scripts/gerar_sw.py. Não edite à mão.
-const VERSAO = '4b7587332cf8';
+const VERSAO = '90f94a3edbe9';
 const CACHE = 'estudos-tce-rj-' + VERSAO;
 const ARQUIVOS = [
   "./",
@@ -11,6 +11,7 @@ const ARQUIVOS = [
   "./index.html",
   "./js/backup.js",
   "./js/data/curriculum.js",
+  "./js/data/material.js",
   "./js/data/questoes-basicas.js",
   "./js/data/questoes-ti.js",
   "./js/data/seed-helpers.js",
@@ -29,6 +30,7 @@ const ARQUIVOS = [
   "./js/pages/editor.js",
   "./js/pages/hoje.js",
   "./js/pages/mais.js",
+  "./js/pages/material.js",
   "./js/pages/questoes.js",
   "./js/pages/revisao.js",
   "./js/pages/simulados.js",

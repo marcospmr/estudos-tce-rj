@@ -9,6 +9,7 @@ import * as cronograma from './pages/cronograma.js';
 import * as desempenho from './pages/desempenho.js';
 import * as ajustes from './pages/ajustes.js';
 import * as mais from './pages/mais.js';
+import * as material from './pages/material.js';
 
 const ROTAS = {
   '/hoje': { aba: 'hoje', render: hoje.render },
@@ -21,6 +22,7 @@ const ROTAS = {
   '/desempenho': { aba: 'mais', render: desempenho.render },
   '/ajustes': { aba: 'mais', render: ajustes.render },
   '/mais': { aba: 'mais', render: mais.render },
+  '/material': { aba: 'mais', render: material.render },
 };
 
 const main = document.getElementById('app');

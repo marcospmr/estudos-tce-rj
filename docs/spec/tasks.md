@@ -31,3 +31,7 @@
   - [ ] 6.3 Modo offline e instalação: verificar no celular após publicar (o ambiente de teste não permite exercitar o service worker)
 - [x] 7. Entrega
   - [x] 7.1 Gerar `estudos-tce-rj.zip` com a pasta `app/` e guia de publicação no Netlify Drop e instalação no celular
+- [x] 8. Material de estudo (Req. 9)
+  - [x] 8.1 `data/material.js`: resumos, pontos de atenção e fontes dos 32 tópicos do mês 1
+  - [x] 8.2 Tela `#/material` (índice e detalhe), botão "Estudar" nas sessões de teoria e item no menu Mais
+  - [ ] 8.3 Resumos dos meses 2 a 8 (escrever antes de cada mês começar)

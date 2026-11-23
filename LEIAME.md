@@ -23,6 +23,7 @@ Use sempre pelo ícone instalado. No iPhone isso é importante: o Safari pode ap
 
 ## 3. Uso diário
 
+- **Material:** nas sessões de teoria, toque em **Estudar** (ou no nome do tópico) para ler o resumo, os pontos que costumam cair e os links das fontes oficiais. O índice completo fica em **Mais → Material de estudo**. Os 32 tópicos do mês 1 já têm resumo.
 - **Hoje:** mostra as sessões do dia. Toque em "Concluir" ao terminar e informe os minutos estudados. Os atalhos levam às questões dos tópicos da sessão.
 - **Questões:** depois de confirmar a resposta, o app mostra o gabarito, o comentário e a fonte. Cada erro entra no caderno, e você pode marcar o tipo de erro e escrever uma anotação.
 - **Revisão:** reúne as questões que vencem no dia. Errou: a questão volta amanhã. Acertou: volta em 7 dias, depois em 30 dias, e então sai do caderno.

@@ -116,3 +116,14 @@ Base de conteúdo: `plano-estudos-tce-rj-ti.md`, ajustado de cerca de 22 h para 
 3. QUANDO a data da prova for informada, o app DEVE recalcular as semanas restantes e mostrar a contagem regressiva.
 4. QUANDO a banca for informada, o app DEVE priorizar o formato de questão correspondente nos filtros padrão e nos simulados (certo/errado para Cebraspe, múltipla escolha para as demais).
 5. Ao recalcular o cronograma, o app NÃO DEVE apagar o histórico de sessões, tentativas ou revisões.
+
+## Requisito 9: Material de estudo por tópico
+
+**História:** Como candidato, quero ler um resumo de cada tópico dentro do app, com as fontes oficiais, para estudar a teoria sem depender só de material externo.
+
+**Critérios de aceitação:**
+1. Cada sessão de teoria DEVE ter um atalho para o material do tópico.
+2. O material DEVE trazer um resumo, os pontos que costumam cair e as fontes oficiais (com link quando houver).
+3. Todos os tópicos do mês 1 DEVEM ter material. Os demais DEVEM indicar que o resumo ainda não está disponível e sugerir fontes da disciplina.
+4. O material DEVE ter um botão para as questões do mesmo tópico.
+5. Links externos DEVEM abrir fora do app (`target="_blank"`, `rel="noopener noreferrer"`).
