@@ -6,6 +6,7 @@ export async function render(root) {
   anexar(root, 
     h('header', { class: 'topo' }, h('h1', {}, 'Mais')),
     h('nav', { class: 'menu-mais' },
+      h('a', { href: '#/material' }, h('strong', {}, 'Material de estudo'), h('span', {}, 'Resumos, pontos que caem e fontes de cada tópico')),
       h('a', { href: '#/cronograma' }, h('strong', {}, 'Cronograma'), h('span', {}, 'Semanas do plano e semana-modelo')),
       h('a', { href: '#/desempenho' }, h('strong', {}, 'Desempenho'), h('span', {}, 'Acerto por disciplina, horas e simulados')),
       h('a', { href: '#/ajustes' }, h('strong', {}, 'Ajustes'), h('span', {}, 'Edital, conteúdo, questões e backup'))),

@@ -89,7 +89,9 @@ export function sessaoCard(s, ctx, mostrarData = false) {
   const conteudo = [];
   let pior = null;
   if (s.tipo === 'teoria') {
-    conteudo.push(h('ul', { class: 'lista-topicos' }, s.partes.map((p) => h('li', {}, nomeTopico(p.topicoId), s.partes.length > 1 ? ` (${p.minutos} min)` : ''))));
+    conteudo.push(h('ul', { class: 'lista-topicos' }, s.partes.map((p) => h('li', {},
+      h('a', { href: `#/material?topico=${encodeURIComponent(p.topicoId)}` }, nomeTopico(p.topicoId)),
+      s.partes.length > 1 ? ` (${p.minutos} min)` : ''))));
   } else if (s.tipo === 'questoes') {
     conteudo.push(h('p', { class: 'pequeno' }, s.topicoIds.length ? 'Sobre: ' + s.topicoIds.map(nomeTopico).join('; ') : 'Questões mistas dos tópicos já estudados, incluindo revisões vencidas.'));
   } else if (s.tipo === 'revisao') {
@@ -137,7 +139,10 @@ export function sessaoCard(s, ctx, mostrarData = false) {
 
 function acaoPrincipal(s, pior) {
   const q = (ids) => `#/questoes?topicos=${encodeURIComponent(ids.join(','))}`;
-  if (s.tipo === 'teoria') return link('Questões destes tópicos', q(s.topicoIds), 'btn btn-secundario');
+  if (s.tipo === 'teoria') return [
+    link('Estudar', `#/material?topico=${encodeURIComponent(s.topicoIds[0])}`, 'btn btn-primario'),
+    link('Questões', q(s.topicoIds), 'btn btn-secundario'),
+  ];
   if (s.tipo === 'questoes') return link('Resolver questões', s.topicoIds.length ? q(s.topicoIds) : '#/questoes?estudados=1', 'btn btn-primario');
   if (s.tipo === 'revisao') return link('Abrir caderno de erros', '#/revisao', 'btn btn-primario');
   if (s.tipo === 'recuperacao') return link('Questões do tópico', pior ? q([pior]) : '#/revisao', 'btn btn-primario');
